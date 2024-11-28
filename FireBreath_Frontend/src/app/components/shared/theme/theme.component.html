@@ -1,0 +1,8 @@
+<div class="theme">
+    <button type="button" class="btn btnLight" [ngClass]="themeClass" [class.active]="lightButtonPressed" (click)="switchTheme('light')">
+        <i class="fa-solid fa-sun fa-lg" [ngClass]="themeClass"></i>
+    </button>
+    <button type="button" class="btn btnDark" [ngClass]="themeClass" [class.active]="darkButtonPressed" (click)="switchTheme('dark')">
+        <i class="fa-solid fa-moon fa-lg" [ngClass]="themeClass"></i>
+    </button>
+</div>

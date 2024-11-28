@@ -1,0 +1,28 @@
+{
+    "login": {
+      "title": "Inicio de Sesión",
+      "email": "Correo",
+      "emailplaceholder": "Ingrese su Correo",
+      "password": "Contraseña",
+      "passwordplaceholder": "Ingrese su Contraseña",
+      "login": "Iniciar Sesión",
+      "signup": "Registrarse",
+      "forgotpassword": "¿Olvidó su contraseña? Recupérela aquí"
+    },
+
+    "recovery": {
+      "title": "Recuperación de contraseña",
+      "email": "Email",
+      "emailplaceholder": "Introduzca su Email",
+      "recover": "Enviar enlace de recuperación"
+    },
+
+    "close": {
+      "title": "Vuelve a la aplicación",
+      "text":"Todo listo. Ya puedes iniciar sesión."
+    },
+
+    "copyright": {
+      "developed": "© 2024 FireBreath - Desarrollado por Juanitte - Juan Francisco Hermo López"
+    }
+}

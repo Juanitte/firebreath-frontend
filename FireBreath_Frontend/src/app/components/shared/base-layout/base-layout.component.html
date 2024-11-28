@@ -1,0 +1,18 @@
+<div id="appContainer">
+    <div class="header">
+        <div class="d-flex flex-row">
+            <app-language></app-language>
+            <app-theme></app-theme>
+        </div>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer d-flex flex-column align-items-center pt-5">
+        <img src="logo_dark.png" alt="logo" width="100" height="100" *ngIf="isDarkTheme" />
+        <img src="logo_light.png" alt="logo" width="100" height="100" *ngIf="!isDarkTheme" />
+        <p class="small text-center pt-3">
+            {{ 'copyright.developed' | translate }}
+        </p>
+    </div>
+</div>

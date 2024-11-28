@@ -1,0 +1,28 @@
+{
+    "login": {
+      "title": "Log in",
+      "email": "Email",
+      "emailplaceholder": "Enter your Email",
+      "password": "Password",
+      "passwordplaceholder": "Enter your Password",
+      "login": "Log in",
+      "signup": "Sign up",
+      "forgotpassword": "Forgot your Password? Recover it here"
+    },
+
+    "recovery": {
+      "title": "Password Recovery",
+      "email": "Email",
+      "emailplaceholder": "Enter your Email",
+      "recover": "Send Recovery Link"
+    },
+
+    "close": {
+      "title": "Back to App",
+      "text":"All set. You can now access your account."
+    },
+
+    "copyright": {
+      "developed": "© 2024 FireBreath - Developed by Juanitte - Juan Francisco Hermo López"
+    }
+}

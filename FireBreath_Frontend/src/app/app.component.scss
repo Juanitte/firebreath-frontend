@@ -1,0 +1,17 @@
+@import "../styles/variables.scss";
+
+.body.dark {
+    background-color: $bg-color-dark !important;
+    color: $text-color-dark !important;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.body.light {
+    background-color: $bg-color-light !important;
+    color: $text-color-light !important;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

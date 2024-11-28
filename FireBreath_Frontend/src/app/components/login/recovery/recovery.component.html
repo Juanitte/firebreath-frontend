@@ -1,0 +1,34 @@
+<div id="loading" *ngIf="loading$ | async" class="w-100 h-100">
+    <app-loading></app-loading>
+</div>
+
+<div class="custom-container col justify-items-center align-items-center" [ngClass]="themeClass" *ngIf="!(loading$ | async)">
+    <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <div class="title py-3 px-3">
+            <h1 class="pt-2">{{'recovery.title' | translate}}</h1>
+        </div>
+        <div class="form-container pt-4 pb-3 px-5">
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'recovery.email' |
+                    translate}}</label>
+                <input type="text" class="form-control form-control-lg" id="email"
+                    placeholder="{{'login.emailplaceholder' | translate}}" formControlName="email">
+            </div>
+
+            <div class="mb-3">
+                <p class="error-msg">
+                    {{errorMsg}}
+                </p>
+            </div>
+
+            <div id="loading" *ngIf="loading$ | async" class="w-100 h-100">
+                <app-loading></app-loading>
+            </div>
+
+            <div class="d-grid mb-3">
+                <button [disabled]="!loginForm.valid" type="submit" class="btn btn-lg">{{'recovery.recover' |
+                    translate}}</button>
+            </div>
+        </div>
+    </form>
+</div>
