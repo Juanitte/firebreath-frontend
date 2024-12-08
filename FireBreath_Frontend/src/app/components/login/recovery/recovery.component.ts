@@ -84,10 +84,10 @@ export class RecoveryComponent implements OnInit, OnDestroy {
           this.loadingService.hideLoading();
 
           this.errorMsg = "";
-          if (this.usersService.currentUser?.role === Roles.superAdminRole) {
-            this.router.navigate([Routes.supportManager]);
-          } else if (this.usersService.currentUser?.role === Roles.adminRole) {
-            this.router.navigate([Routes.supportTechnician]);
+          if (this.usersService.currentUser?.role === Roles.adminRole) {
+            this.router.navigate([Routes.home]);
+          } else if (this.usersService.currentUser?.role === Roles.userRole) {
+            this.router.navigate([Routes.home]);
           }
         },
         error: (error) => {
@@ -116,10 +116,10 @@ export class RecoveryComponent implements OnInit, OnDestroy {
    */
 
   checkNavigateUser(user: iUser | null) {
-    if (user?.role === Roles.superAdminRole) {
-      this.router.navigate([Routes.supportManager]);
-    } else if (user?.role === Roles.adminRole) {
-      this.router.navigate([Routes.supportTechnician]);
+    if (user?.role === Roles.adminRole) {
+      this.router.navigate([Routes.home]);
+    } else if (user?.role === Roles.userRole) {
+      this.router.navigate([Routes.home]);
     } else {
       this.router.navigate([Routes.login]);
     }

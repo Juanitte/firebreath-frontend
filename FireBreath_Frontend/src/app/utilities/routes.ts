@@ -3,7 +3,7 @@ export enum Routes {
     recover = 'recover',
     recover2 = 'recover/:hash/:username/:domain/:tld',
     register = 'register',
-    supportManager = 'manager/support-manager',
+    home = 'home',
     supportTechnician = 'manager/support-technician',
     reviewManager = 'manager/review',
     incidence = 'incidence',

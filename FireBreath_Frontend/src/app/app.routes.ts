@@ -6,19 +6,21 @@ import { LoginPageComponent } from './pages/login/login-page/login-page.componen
 import { loginGuard } from './guards/login.guard';
 import { RecoveryPageComponent } from './pages/login/recovery-page/recovery-page.component';
 import { SignupPageComponent } from './pages/login/signup-page/signup-page.component';
+import { HomePageComponent } from './pages/home/home-page/home-page.component';
 
 export const routes: Routes = [
     {
         path: '', component: BaseLayoutComponent, children: [ //Rutas sin navbar
           { path: '', component: LoginPageComponent },
+          { path: 'login', component: LoginPageComponent },
           { path: 'recover', component: RecoveryPageComponent },
           { path: 'register', component: SignupPageComponent }
         ]
       },
     
       {
-        path: 'manager', component: SiteLayoutComponent, canActivateChild: [loginGuard], children: [ //Rutas con navbar  
-          { path: 'asd', component: LoginPageComponent }
+        path: 'home', component: SiteLayoutComponent, canActivateChild: [loginGuard], children: [ //Rutas con navbar  
+          { path: '', component: HomePageComponent }
         ]
       },
       
