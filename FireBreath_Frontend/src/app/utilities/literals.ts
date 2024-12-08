@@ -21,5 +21,5 @@ export enum StorageRoutes {
 
 export const environment = {
     production: false,
-    apiUrl: 'https://localhost:7131'
+    apiUrl: 'https://localhost:7058/gateway'
 };
