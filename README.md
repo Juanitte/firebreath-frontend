@@ -5,7 +5,7 @@ Final project for Web Application Development Grade.
 Social media, based on Twitter.
 In this app, users can post, follow other users and send them private messages.
 
-That's the **frontend**. Developed using:
+**Frontend** developed using:
 - **Angular 19**
 - **SCSS**
 - **HTML**
