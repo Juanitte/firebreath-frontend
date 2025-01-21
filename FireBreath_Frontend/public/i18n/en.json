@@ -10,6 +10,20 @@
       "forgotpassword": "Forgot your Password? Recover it here"
     },
 
+    "register": {
+      "title": "Sign up",
+      "email": "Email",
+      "emailplaceholder": "Enter your Email",
+      "password": "Password",
+      "passwordplaceholder": "Enter your Password",
+      "confirmpassword": "Confirm Password",
+      "username": "Username",
+      "usernameplaceholder": "Enter your Username",
+      "tag": "Tag",
+      "tagplaceholder": "Enter your Tag",
+      "register": "Create Account"
+    },
+
     "recovery": {
       "title": "Password Recovery",
       "email": "Email",

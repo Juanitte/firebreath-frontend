@@ -1,13 +1,27 @@
 {
     "login": {
       "title": "Inicio de Sesión",
-      "email": "Correo",
-      "emailplaceholder": "Ingrese su Correo",
+      "email": "Email",
+      "emailplaceholder": "Introduzca su email",
       "password": "Contraseña",
-      "passwordplaceholder": "Ingrese su Contraseña",
+      "passwordplaceholder": "Introduzca su contraseña",
       "login": "Iniciar Sesión",
-      "signup": "Registrarse",
+      "signup": "Crear Cuenta",
       "forgotpassword": "¿Olvidó su contraseña? Recupérela aquí"
+    },
+
+    "register": {
+      "title": "Crear Cuenta",
+      "email": "Email",
+      "emailplaceholder": "Introduzca su email",
+      "password": "Contraseña",
+      "passwordplaceholder": "Introduzca su contraseña",
+      "confirmpassword": "Confirmar contraseña",
+      "username": "Nombre de usuario",
+      "usernameplaceholder": "Introduzca su nombre de usuario",
+      "tag": "Tag",
+      "tagplaceholder": "Introduzca su tag",
+      "register": "Crear Cuenta"
     },
 
     "recovery": {
