@@ -1,1 +1,61 @@
-<p>signup works!</p>
+<div id="loading" *ngIf="loading$ | async" class="w-100 h-100">
+    <app-loading></app-loading>
+</div>
+
+<div class="custom-container col justify-items-center align-items-center" [ngClass]="themeClass" *ngIf="!(loading$ | async)">
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="title py-3 px-3">
+            <h1 class="pt-2">{{'register.title' | translate}}</h1>
+        </div>
+        <div class="form-container pt-4 pb-3 px-5">
+
+            <div class="mb-3">
+                <label for="username" class="form-label"><i class="fa-solid fa-at"></i> {{'register.username' |
+                    translate}}</label>
+                <input type="text" class="form-control form-control-lg" id="username"
+                    placeholder="{{'register.usernameplaceholder' | translate}}" formControlName="username">
+            </div>
+
+            <div class="mb-3">
+                <label for="tag" class="form-label"><i class="fa-solid fa-at"></i> {{'register.tag' |
+                    translate}}</label>
+                <input type="text" class="form-control form-control-lg" id="tag"
+                    placeholder="{{'register.tagplaceholder' | translate}}" formControlName="tag">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'register.email' |
+                    translate}}</label>
+                <input type="text" class="form-control form-control-lg" id="email"
+                    placeholder="{{'register.emailplaceholder' | translate}}" formControlName="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label"><i class="fa-solid fa-lock"></i> {{'register.password' |
+                    translate}}</label>
+                <div class="input-group">
+                    <input type="password" class="form-control form-control-lg" id="password" autocomplete="off"
+                        placeholder="{{'register.passwordplaceholder' | translate}} " formControlName="password">
+                    <span class="input-group-text eye" (click)="togglePasswordVisibility()">
+                        <i class="fas fa-eye"
+                            [ngClass]="{'fa-eye': passwordVisible, 'fa-eye-slash': !passwordVisible}"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <p class="error-msg">
+                    {{errorMsg}}
+                </p>
+            </div>
+
+            <div id="loading" *ngIf="loading$ | async" class="w-100 h-100">
+                <app-loading></app-loading>
+            </div>
+
+            <div class="d-grid mb-1">
+                <button [disabled]="!registerForm.valid" type="submit" class="btn btn-lg">{{'register.register' | translate}}</button>
+            </div>
+        </div>
+    </form>
+</div>
